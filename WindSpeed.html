@@ -17,11 +17,13 @@
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-default">
+    <!-- <div class="container-fluid"> -->
     <div class="container-fluid navbar-custom">
 
       <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" aria-expanded="true">
+              <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> -->
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -34,7 +36,7 @@
 
         <!-- Collect the navigation links, forms and other content for toggling -->
         <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right"navbar-right-custom> 
+          <ul class="nav navbar-nav navbar-right"> 
             </li> 
             <li><a href="Comparison.html">Comparison</a></li>
             <li><a href="Data.html">Data</a></li>        
@@ -59,37 +61,30 @@
     <section class="row">
       <div class="col-sm-8">
         <article class="description-content">
-          <h1 class="description-header">Summary: Latitude vs. X</h1>
+          <h1 class="description-header text-center">Wind Speed</h1>
           <hr class="description-hr"/>
-          <img src="Resources/assets/images/MaxTemperature.png" alt="" id="description-image"/>
-          <p>The purpose of this project was to analyze how the weather 
-            changes as you get loser to the equator. To accomplish this
-            analysis, first, the data was pulled data from the OpenWeather Map API
-            to asseble a dataset on over 500 cities.</p>
-          <p>After assembling the dataset, Matplotlib python library was used to plot various
-            aspects of the weather vs, latitude. Factors observed included: temperature, humidity, 
-            cloudines, and wind speed. This site provides the source data ad visualizations created
-            as part of the analysis, as well as explanations and descriptions of any trends and
-            correlations witnessed.</p>
+          <img src="Resources/assets/images/WindSpeed.png" alt="" class="img-responsive"/>
+          <p>There is no strong relationship between latitude and wind speed. However, in Northern Hemisphere there is a flurry of cities with the wind speed under 10 mph/h.</p>
         </article> <!-- article -->
       </div> <!-- col-sm-8 -->
 
-      <div class="col-sm-4"
+      <div class="col-sm-4">
         <!-- Visualizations imageNav area -->
-        <article id="imageNav-area">
+        <section id="imageNav-area">
           <div class="imageNav-content">
-            <h2 class="imageNav-header">Visualizations</h2>
+            <div class="imageNav-header text-center">Visualizations</div>
             <hr />
             <div id="images">
                 <a href="MaxTemperature.html"><img src="Resources/assets/images/MaxTemperature.png" class="imageNav-photo"></a>
                 <a href="Humidity.html"><img src="Resources/assets/images/Humidity.png" class="imageNav-photo"></a>
                 <a href="Cloudiness.html"><img src="Resources/assets/images/Cloudiness.png" class="imageNav-photo"></a>
-                <a href="WindSpeed.html"><img src="Resources/assets/images/WindSpeed.png" class="imageNav-photo"></a> 
+                <a href="WindSpeed.html"><img src="Resources/assets/images/WindSpeed.png" class="imageNav-photo active"></a> 
             </div>
           </div>  <!-- imageNav content -->
-        </article>  <!-- imageNav-area -->
+        </section>  <!-- imageNav-area -->
         <!-- End of Visualization imageNav area -->
-      </div>  
+      </div> <!--  col-sm-4  -->
+
     </section> <!-- row  -->
   </div> <!-- End of the container -->
 

@@ -56,41 +56,34 @@
   </nav>
 
   <div class="container">
-    <section class="row">
+    <div class="row">
       <div class="col-sm-8">
         <article class="description-content">
-          <h1 class="description-header">Summary: Latitude vs. X</h1>
+          <h1 class="description-header text-center">Max Temperature</h1>
           <hr class="description-hr"/>
-          <img src="Resources/assets/images/MaxTemperature.png" alt="" id="description-image"/>
-          <p>The purpose of this project was to analyze how the weather 
-            changes as you get loser to the equator. To accomplish this
-            analysis, first, the data was pulled data from the OpenWeather Map API
-            to asseble a dataset on over 500 cities.</p>
-          <p>After assembling the dataset, Matplotlib python library was used to plot various
-            aspects of the weather vs, latitude. Factors observed included: temperature, humidity, 
-            cloudines, and wind speed. This site provides the source data ad visualizations created
-            as part of the analysis, as well as explanations and descriptions of any trends and
-            correlations witnessed.</p>
+          <img src="Resources/assets/images/MaxTemperature.png" alt="" class="img-responsive"/>
+          <p>As expected, the weather becomes significantly warmer as one approaches the equator (0 Degree Latitude). More interestingly, however, is the fact that Southern Hemisphere tends to be warmer this time of year than Northern Hemisphere. This may be due to the tilt of the earth.</p>
         </article> <!-- article -->
       </div> <!-- col-sm-8 -->
 
-      <div class="col-sm-4"
+      <div class="col-sm-4">
         <!-- Visualizations imageNav area -->
-        <article id="imageNav-area">
+        <section id="imageNav-area">
           <div class="imageNav-content">
-            <h2 class="imageNav-header">Visualizations</h2>
+            <div class="imageNav-header text-center">Visualizations</div>
             <hr />
             <div id="images">
-                <a href="MaxTemperature.html"><img src="Resources/assets/images/MaxTemperature.png" class="imageNav-photo"></a>
+                <a href="MaxTemperature.html"><img src="Resources/assets/images/MaxTemperature.png" class="imageNav-photo active"></a>
                 <a href="Humidity.html"><img src="Resources/assets/images/Humidity.png" class="imageNav-photo"></a>
                 <a href="Cloudiness.html"><img src="Resources/assets/images/Cloudiness.png" class="imageNav-photo"></a>
                 <a href="WindSpeed.html"><img src="Resources/assets/images/WindSpeed.png" class="imageNav-photo"></a> 
             </div>
           </div>  <!-- imageNav content -->
-        </article>  <!-- imageNav-area -->
+        </section>  <!-- imageNav-area -->
         <!-- End of Visualization imageNav area -->
-      </div>  
-    </section> <!-- row  -->
+      </div> <!--  col-sm-4  -->
+
+    </div> <!-- row  -->
   </div> <!-- End of the container -->
 
   <!-- jQuery CDN -->

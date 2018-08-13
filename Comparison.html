@@ -56,41 +56,39 @@
   </nav>
 
   <div class="container">
-    <section class="row">
-      <div class="col-sm-8">
-        <article class="description-content">
-          <h1 class="description-header">Summary: Latitude vs. X</h1>
-          <hr class="description-hr"/>
-          <img src="Resources/assets/images/MaxTemperature.png" alt="" id="description-image"/>
-          <p>The purpose of this project was to analyze how the weather 
-            changes as you get loser to the equator. To accomplish this
-            analysis, first, the data was pulled data from the OpenWeather Map API
-            to asseble a dataset on over 500 cities.</p>
-          <p>After assembling the dataset, Matplotlib python library was used to plot various
-            aspects of the weather vs, latitude. Factors observed included: temperature, humidity, 
-            cloudines, and wind speed. This site provides the source data ad visualizations created
-            as part of the analysis, as well as explanations and descriptions of any trends and
-            correlations witnessed.</p>
-        </article> <!-- article -->
-      </div> <!-- col-sm-8 -->
-
-      <div class="col-sm-4"
-        <!-- Visualizations imageNav area -->
-        <article id="imageNav-area">
-          <div class="imageNav-content">
-            <h2 class="imageNav-header">Visualizations</h2>
-            <hr />
-            <div id="images">
-                <a href="MaxTemperature.html"><img src="Resources/assets/images/MaxTemperature.png" class="imageNav-photo"></a>
-                <a href="Humidity.html"><img src="Resources/assets/images/Humidity.png" class="imageNav-photo"></a>
-                <a href="Cloudiness.html"><img src="Resources/assets/images/Cloudiness.png" class="imageNav-photo"></a>
-                <a href="WindSpeed.html"><img src="Resources/assets/images/WindSpeed.png" class="imageNav-photo"></a> 
-            </div>
-          </div>  <!-- imageNav content -->
-        </article>  <!-- imageNav-area -->
-        <!-- End of Visualization imageNav area -->
-      </div>  
-    </section> <!-- row  -->
+    <article class="row description2-content">
+      <!-- Common header -->
+        <div class="col-sm-12">
+            <h1 class="description2-header text-center">Comparison: Latitude vs. X</h1>
+            <hr class="description2-hr"/>
+            <h3 class="description2-text text-left">Click any plot to get in-depth analysis.</h3>
+        </div> <!-- col-sm-12 -->
+      <!-- Comparison images  -->     
+        <div class="col-md-6">
+            <h4 class="comparison-header text-center">vs. Max Temperature</h4>
+            <hr class="description2-hr"/>
+            <a href="MaxTemperature.html"><img src="Resources/assets/images/MaxTemperature.png" class="comparison-image img-responsive"></a>
+            <hr class="description2-hr"/>
+        </div> <!-- col-sm-6 -->
+        <div class="col-md-6">
+            <h4 class="comparison-header text-center">vs. Humidity</h4>
+            <hr class="description2-hr"/>
+            <a href="Humidity.html"><img src="Resources/assets/images/Humidity.png" class="comparison-image img-responsive"></a>
+            <hr class="description2-hr"/>
+        </div> <!-- col-sm-6 -->
+        <div class="col-sm-6">
+            <h4 class="comparison-header text-center">vs. Cloudiness</h4>
+            <hr class="description2-hr"/>
+            <a href="Cloudiness.html"><img src="Resources/assets/images/Cloudiness.png" class="comparison-image img-responsive"></a>
+            <hr class="description2-hr"/>
+        </div> <!-- col-sm-6 -->
+        <div class="col-sm-6">
+            <h4 class="comparison-header text-center">vs. Wind Speed</h4>
+            <hr class="description2-hr"/>
+            <a href="WindSpeed.html"><img src="Resources/assets/images/WindSpeed.png" class="comparison-image img-responsive"></a>
+            <hr class="description2-hr"/>
+        </div> <!-- col-sm-6 -->
+    </article> 
   </div> <!-- End of the container -->
 
   <!-- jQuery CDN -->
